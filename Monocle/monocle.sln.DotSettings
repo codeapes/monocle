@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=4EC7527C35D5164D9EF18887DCA44BB1/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/InjectedLayers/FileInjectedLayer/=4EC7527C35D5164D9EF18887DCA44BB1/AbsolutePath/@EntryValue">C:\Git\monocle\Monocle\monocle.sln.DotSettings</s:String>
+	<s:Boolean x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=File4EC7527C35D5164D9EF18887DCA44BB1/@KeyIndexDefined">True</s:Boolean>
+	<s:Double x:Key="/Default/Environment/InjectedLayers/InjectedLayerCustomization/=File4EC7527C35D5164D9EF18887DCA44BB1/RelativePriority/@EntryValue">1</s:Double>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BE28E6DC1EBD9049AA40FAC1B6852C81/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BE28E6DC1EBD9049AA40FAC1B6852C81/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BE28E6DC1EBD9049AA40FAC1B6852C81/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BE28E6DC1EBD9049AA40FAC1B6852C81/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BE28E6DC1EBD9049AA40FAC1B6852C81/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BE28E6DC1EBD9049AA40FAC1B6852C81/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BE28E6DC1EBD9049AA40FAC1B6852C81/Shortcut/@EntryValue">header</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BE28E6DC1EBD9049AA40FAC1B6852C81/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BE28E6DC1EBD9049AA40FAC1B6852C81/Text/@EntryValue">// Copyright (c) 2015 All Right Reserved, http://CodeApes.de/</s:String></wpf:ResourceDictionary>

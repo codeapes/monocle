@@ -5,7 +5,7 @@ using System.Reflection;
 [assembly: AssemblyProduct("Monocle")]
 [assembly: AssemblyTrademark("")]
 
-public static class Version
+internal static class Version
 {
     public const string Major = "0";
     public const string Minor = "1";

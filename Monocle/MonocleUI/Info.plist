@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>TestIcon.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>de.codeapes.MonocleUI</string>
+	<key>CFBundleName</key>
+	<string>Monocle</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.6</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>CFBundleDisplayName</key>
+	<string>Monocle</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.developer-tools</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1</string>
+</dict>
+</plist>

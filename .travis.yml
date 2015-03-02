@@ -1,2 +1,2 @@
 language: csharp
-solution: Monocle.sln
+solution: Monocle/Monocle.sln

@@ -1,1 +1,1 @@
-# monocle [![Build Status](https://travis-ci.org/codeapes/monocle.svg)](https://travis-ci.org/codeapes/monocle)
+# monocle [![Build Status](https://travis-ci.org/codeapes/monocle.svg?branch=master)](https://travis-ci.org/codeapes/monocle)

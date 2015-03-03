@@ -1,2 +1,5 @@
 language: csharp
 solution: Monocle/Monocle.sln
+notifications:
+    hipchat:
+        secure: "aFHN15yTzCHebcQMBgiG0TvRj7jW0FJMNq3X8YSIHZ3TNPAv5hv+G6dOhQSo9iV9h2bdhB75bvoWzZHk+prsFavxoGF2KWKCcBD60EeuWQUqF/HJposbGuMy1Yzwsjr1hCAfjWHsROWFseMDcxbaEdhnThDA1Fx1ZDWmZixJC1w="

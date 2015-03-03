@@ -29,7 +29,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeApes.Monocle.Utils.Test
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Backend", "3 - Backend", "{B903B944-9B7D-4DC0-9C3D-82BCAE2E0FF5}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MonocleUI", "MonocleUI\MonocleUI.shproj", "{6D34A007-A6FC-43DC-B936-37242ED2D403}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonocleUI.Gtk3", "MonocleUI.Gtk3\MonocleUI.Gtk3.csproj", "{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonocleUI.WinForms", "MonocleUI.WinForms\MonocleUI.WinForms.csproj", "{DC84E101-E975-47BD-8825-7290F6C65BBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonocleUI.Mac", "MonocleUI.Mac\MonocleUI.Mac.csproj", "{3E154779-651F-4D6D-814F-B73B287D3CE8}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		MonocleUI\MonocleUI.projitems*{d562d6ff-88bd-4a3a-a7e1-d2881a76de29}*SharedItemsImports = 4
+		MonocleUI\MonocleUI.projitems*{3e154779-651f-4d6d-814f-b73b287d3ce8}*SharedItemsImports = 4
+		MonocleUI\MonocleUI.projitems*{6d34a007-a6fc-43dc-b936-37242ed2d403}*SharedItemsImports = 13
+		MonocleUI\MonocleUI.projitems*{dc84e101-e975-47bd-8825-7290f6c65bbc}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		AppStore|Any CPU = AppStore|Any CPU
 		AppStore|Mixed Platforms = AppStore|Mixed Platforms
@@ -132,6 +146,51 @@ Global
 		{65013203-230B-4E17-96CA-2C67EF8A72C9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{65013203-230B-4E17-96CA-2C67EF8A72C9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{65013203-230B-4E17-96CA-2C67EF8A72C9}.Release|x86.ActiveCfg = Release|Any CPU
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.AppStore|Any CPU.ActiveCfg = Release|x86
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.AppStore|Mixed Platforms.ActiveCfg = Release|x86
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.AppStore|Mixed Platforms.Build.0 = Release|x86
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.AppStore|x86.ActiveCfg = Release|x86
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.AppStore|x86.Build.0 = Release|x86
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.Debug|x86.ActiveCfg = Debug|x86
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.Debug|x86.Build.0 = Debug|x86
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.Release|Any CPU.ActiveCfg = Release|x86
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.Release|Mixed Platforms.Build.0 = Release|x86
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.Release|x86.ActiveCfg = Release|x86
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29}.Release|x86.Build.0 = Release|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.AppStore|Any CPU.ActiveCfg = Release|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.AppStore|Mixed Platforms.ActiveCfg = Release|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.AppStore|Mixed Platforms.Build.0 = Release|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.AppStore|x86.ActiveCfg = Release|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.AppStore|x86.Build.0 = Release|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.Debug|x86.ActiveCfg = Debug|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.Debug|x86.Build.0 = Debug|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.Release|Any CPU.ActiveCfg = Release|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.Release|Mixed Platforms.Build.0 = Release|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.Release|x86.ActiveCfg = Release|x86
+		{DC84E101-E975-47BD-8825-7290F6C65BBC}.Release|x86.Build.0 = Release|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.AppStore|Any CPU.ActiveCfg = Release|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.AppStore|Mixed Platforms.ActiveCfg = Release|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.AppStore|Mixed Platforms.Build.0 = Release|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.AppStore|x86.ActiveCfg = Release|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.AppStore|x86.Build.0 = Release|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.Debug|x86.ActiveCfg = Debug|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.Debug|x86.Build.0 = Debug|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.Release|Any CPU.ActiveCfg = Release|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.Release|Mixed Platforms.Build.0 = Release|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.Release|x86.ActiveCfg = Release|x86
+		{3E154779-651F-4D6D-814F-B73B287D3CE8}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -143,5 +202,9 @@ Global
 		{CD723D9C-3BE8-4D52-A61A-D75B693CD75E} = {A9C1DA82-C2B7-47C7-8A10-56AD7041E593}
 		{2E959829-66A4-4180-9E49-2227B90D1E4F} = {A9C1DA82-C2B7-47C7-8A10-56AD7041E593}
 		{65013203-230B-4E17-96CA-2C67EF8A72C9} = {A9C1DA82-C2B7-47C7-8A10-56AD7041E593}
+		{6D34A007-A6FC-43DC-B936-37242ED2D403} = {8B2E9376-3B74-4CA0-A16D-EEB3AF652BC3}
+		{D562D6FF-88BD-4A3A-A7E1-D2881A76DE29} = {8B2E9376-3B74-4CA0-A16D-EEB3AF652BC3}
+		{DC84E101-E975-47BD-8825-7290F6C65BBC} = {8B2E9376-3B74-4CA0-A16D-EEB3AF652BC3}
+		{3E154779-651F-4D6D-814F-B73B287D3CE8} = {8B2E9376-3B74-4CA0-A16D-EEB3AF652BC3}
 	EndGlobalSection
 EndGlobal

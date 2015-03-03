@@ -45,6 +45,11 @@
     <Compile Include="..\Include\Version.cs">
       <Link>Version.cs</Link>
     </Compile>
+    <Compile Include="Eventing\EventAggregator.cs" />
+    <Compile Include="Eventing\IEventAggregator.cs" />
+    <Compile Include="Eventing\IEventSubscriber.cs" />
+    <Compile Include="Eventing\PublishSubscribeEvent.cs" />
+    <Compile Include="Eventing\SubscriptionHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

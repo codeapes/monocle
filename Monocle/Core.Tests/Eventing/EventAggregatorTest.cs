@@ -19,7 +19,7 @@ namespace CodeApes.Monocle.Eventing
         [Test]
         public void Publish_EventGiven_ShouldNotfiySubscriber()
         {
-            var testObject = Fixture.CreateTestObject();
+            var testObject = fixture.CreateTestObject(0);
             var subscriber = Fixture.CreateSubscriber("subscriber1", testObject);
             testObject.SubscribeToEvent(subscriber);
 
@@ -31,11 +31,15 @@ namespace CodeApes.Monocle.Eventing
         [Test]
         public void Publish_SubscriberInDifferentThreadEventPublishedFromMainThread_ShouldNotifySubscriber()
         {
-            var testObject = Fixture.CreateTestObject();
+            var testObject = fixture.CreateTestObject(1);
 
             var subscriber = fixture.StartSubscriber("subscriber1", testObject);
 
-            Thread.Sleep(100);
+            while (!fixture.Initialized)
+            {
+                Thread.Sleep(10);
+            }
+
             testObject.Publish(new TestEvent());
             subscriber.Wait();
         }
@@ -43,12 +47,16 @@ namespace CodeApes.Monocle.Eventing
         [Test]
         public void Publish_SubscribersInDifferentThreadsEventsPublishedFromAllThreads_ShouldNotifySubscribers()
         {
-            var testObject = Fixture.CreateTestObject();
+            var testObject = fixture.CreateTestObject(2);
 
             var subscriber = fixture.StartPublisher("subscriber1", testObject, true);
             var subscriber2 = fixture.StartPublisher("subscriber2", testObject, false);
 
-            Thread.Sleep(100);
+            while (!fixture.Initialized)
+            {
+                Thread.Sleep(10);                
+            }
+
             testObject.Publish(new TestEvent());
 
             subscriber.Wait();

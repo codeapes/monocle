@@ -1,6 +1,7 @@
 ﻿// Copyright (c) 2015 All Right Reserved, http://CodeApes.de/
 
 using System.Threading.Tasks;
+using Moq;
 using NUnit.Framework;
 
 namespace CodeApes.Monocle.Eventing
@@ -9,9 +10,37 @@ namespace CodeApes.Monocle.Eventing
     {
         private class Fixture
         {
-            public static IEventAggregator CreateTestObject()
+            private readonly MockRepository mockRepository = new MockRepository(MockBehavior.Loose);
+            private readonly Mock<IEventSubscriber<InitEvent>> initSubscriber;
+            private int initCounter;
+            private int numerOfExpectedInitEvents;
+
+            public Fixture()
             {
-                return new EventAggregator();
+                initSubscriber = mockRepository.Create<IEventSubscriber<InitEvent>>();
+            }
+
+            public bool Initialized
+            {
+                get { return initCounter == numerOfExpectedInitEvents; }
+            }
+
+            public IEventAggregator CreateTestObject(int initEventsToExpect)
+            {
+                numerOfExpectedInitEvents = initEventsToExpect;
+                var aggregator = new EventAggregator();
+
+                initSubscriber
+                    .Setup(x => x.OnEvent(It.IsAny<InitEvent>()))
+                    .Callback(IncreaseInitCount);
+
+                initSubscriber
+                    .SetupGet(x => x.EventTypes)
+                    .Returns(new[] { typeof(InitEvent) });
+
+                aggregator.SubscribeToEvent(initSubscriber.Object);
+
+                return aggregator;
             }
 
             public static TestSubscriber CreateSubscriber(string id, IEventAggregator aggregator)
@@ -31,6 +60,7 @@ namespace CodeApes.Monocle.Eventing
                 {
                     var subscriber = new TestSubscriber(id, aggregator);
                     ((IEventAggregator)agr).SubscribeToEvent(subscriber);
+                    ((IEventAggregator)agr).Publish(new InitEvent());
 
                     while (subscriber.Event1Called(0))
                     {
@@ -54,6 +84,11 @@ namespace CodeApes.Monocle.Eventing
 
                 publisherThread.Start();
                 return publisherThread;
+            }
+
+            private void IncreaseInitCount()
+            {
+                initCounter++;
             }
         }
     }

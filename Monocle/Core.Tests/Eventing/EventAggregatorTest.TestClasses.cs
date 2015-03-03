@@ -99,6 +99,7 @@ namespace CodeApes.Monocle.Eventing
             public void Subscribe()
             {
                 aggregator.SubscribeToEvent(this);
+                aggregator.Publish(new InitEvent());
             }
         }
 
@@ -109,5 +110,8 @@ namespace CodeApes.Monocle.Eventing
         private class TestEvent2 : PublishSubscribeEvent
         {
         }
+
+        public class InitEvent : PublishSubscribeEvent
+        { }
     }
 }

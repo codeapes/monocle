@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Include", "Include", "{0DFA
 		Include\Version.cs = Include\Version.cs
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Global", "3 - Global", "{A9C1DA82-C2B7-47C7-8A10-56AD7041E593}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Global", "4 - Global", "{A9C1DA82-C2B7-47C7-8A10-56AD7041E593}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeApes.Monocle.Testing", "Testing\CodeApes.Monocle.Testing.csproj", "{CD723D9C-3BE8-4D52-A61A-D75B693CD75E}"
 EndProject
@@ -32,6 +32,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonocleUIWindows", "MonocleUIWindows\MonocleUIWindows.csproj", "{77986B9F-38D0-403B-8F04-B873627D7E0B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonocleUIWindows.Desktop", "MonocleUIWindows.Desktop\MonocleUIWindows.Desktop.csproj", "{442132E1-462C-41BC-B05B-AFE09802BCA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Backend", "3 - Backend", "{B903B944-9B7D-4DC0-9C3D-82BCAE2E0FF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

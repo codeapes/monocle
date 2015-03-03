@@ -6,7 +6,7 @@ namespace CodeApes.Monocle
     {
         public static void Main(string[] args)
         {
-
+            
         }
     }
 }

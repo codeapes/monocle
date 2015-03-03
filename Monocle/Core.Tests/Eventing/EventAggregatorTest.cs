@@ -35,6 +35,7 @@ namespace CodeApes.Monocle.Eventing
 
             var subscriber = fixture.StartSubscriber("subscriber1", testObject);
 
+            Thread.Sleep(100);
             testObject.Publish(new TestEvent());
             subscriber.Wait();
         }
@@ -47,7 +48,7 @@ namespace CodeApes.Monocle.Eventing
             var subscriber = fixture.StartPublisher("subscriber1", testObject, true);
             var subscriber2 = fixture.StartPublisher("subscriber2", testObject, false);
 
-            Thread.Sleep(10);
+            Thread.Sleep(100);
             testObject.Publish(new TestEvent());
 
             subscriber.Wait();

@@ -55,7 +55,6 @@
     <Compile Include="Eventing\EventAggregatorTest.TestClasses.cs">
       <DependentUpon>EventAggregatorTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Eventing\EventingTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

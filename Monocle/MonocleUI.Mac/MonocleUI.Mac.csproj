@@ -9,6 +9,7 @@
     <RootNamespace>MonocleUI.Mac</RootNamespace>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
     <AssemblyName>MonocleUI.Mac</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <SuppressXamMacMigration>True</SuppressXamMacMigration>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

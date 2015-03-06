@@ -28,21 +28,27 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Eto">
-      <HintPath>..\packages\Eto.Forms.2.0.3\lib\net45\Eto.dll</HintPath>
-    </Reference>
-    <Reference Include="Eto.WinForms">
-      <HintPath>..\packages\Eto.Platform.Windows.2.0.3\lib\net45\Eto.WinForms.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="Eto.WinForms">
+      <HintPath>..\packages\Eto.Platform.Windows.2.0.7\lib\net45\Eto.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Eto">
+      <HintPath>..\packages\Eto.Forms.2.0.7\lib\net45\Eto.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\MonocleUI\MonocleUI.csproj">
+      <Project>{A7394A15-CF9A-485F-A4B9-8C7E041358EB}</Project>
+      <Name>MonocleUI</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

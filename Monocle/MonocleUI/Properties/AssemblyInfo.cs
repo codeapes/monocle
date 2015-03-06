@@ -4,13 +4,13 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle ("MonocleUI.Mac")]
+[assembly: AssemblyTitle ("MonocleUI")]
 [assembly: AssemblyDescription ("")]
 [assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("")]
+[assembly: AssemblyCompany ("CodeApes")]
 [assembly: AssemblyProduct ("")]
-[assembly: AssemblyCopyright ("stefan")]
-[assembly: AssemblyTrademark ("")]
+[assembly: AssemblyCopyright ("CodeApes")]
+[assembly: AssemblyTrademark ("CodeApes")]
 [assembly: AssemblyCulture ("")]
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".

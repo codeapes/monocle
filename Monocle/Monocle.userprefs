@@ -1,6 +1,10 @@
-﻿<Properties StartupItem="MonocleCLI/MonocleCLI.csproj">
+﻿<Properties StartupItem="MonocleUI.Mac/MonocleUI.Mac.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MonocleUI/MainForm.cs">
+    <Files>
+      <File FileName="MonocleUI/MainForm.cs" Line="31" Column="31" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -44,6 +44,5 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <Import Project="..\MonocleUI\MonocleUI.projitems" Label="Shared" Condition="Exists('..\MonocleUI\MonocleUI.projitems')" />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

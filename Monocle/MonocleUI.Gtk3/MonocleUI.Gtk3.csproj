@@ -40,10 +40,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\MonocleUI\Resources\Commands.Designer.cs">
+      <DependentUpon>Commands.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <Import Project="..\MonocleUI\MonocleUI.projitems" Label="Shared" Condition="Exists('..\MonocleUI\MonocleUI.projitems')" />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
